@@ -23,7 +23,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff; /* White underline on blue header */
+    background-color: #fdd303; /* White underline on blue header */
     transition: width 0.3s ease;
     border-radius: 2px;
 }

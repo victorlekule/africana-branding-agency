@@ -188,3 +188,61 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+//contact page//
+// --- EMAILJS CONFIGURATION ---
+// 1. Initialize EmailJS (Replace with your Public Key)
+(function() {
+    // If you haven't added this in your HTML head, uncomment the line below:
+    // emailjs.init("YOUR_PUBLIC_KEY");
+})();
+
+// 2. Handle Form Submission
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const btn = document.getElementById('submit-btn');
+        const originalText = btn.innerHTML;
+
+        // Change button state
+        btn.innerHTML = 'Sending...';
+        btn.disabled = true;
+
+        // Replace with your Service ID and Template ID
+        const serviceID = 'service_opnrakt';
+        const templateID = 'template_to8jl9b';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                // Success State
+                btn.innerHTML = 'Sent Successfully! <i class="fas fa-check"></i>';
+                btn.classList.remove('bg-blue-600');
+                btn.classList.add('bg-green-600');
+                
+                contactForm.reset();
+
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.add('bg-blue-600');
+                    btn.classList.remove('bg-green-600');
+                    btn.disabled = false;
+                }, 3000);
+            }, (err) => {
+                // Error State
+                btn.innerHTML = 'Failed. Try Again.';
+                btn.classList.remove('bg-blue-600');
+                btn.classList.add('bg-red-600');
+                console.error('EmailJS Error:', err);
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.add('bg-blue-600');
+                    btn.classList.remove('bg-red-600');
+                    btn.disabled = false;
+                }, 3000);
+            });
+    });
+}
