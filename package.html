@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - Africana Branding Agency</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-poppins bg-gray-50 text-black antialiased overflow-x-hidden">
+
+<nav class="fixed w-full z-50 top-0 left-0 bg-blue-600 text-white shadow-lg h-24 flex items-center justify-center">
+        
+        <div class="w-full max-w-7xl mx-auto px-6 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center gap-2 group">
+                
+                <div class="flex flex-col leading-tight">
+                    <span class="text-xl font-bold tracking-tight text-white group-hover:opacity-90 transition-opacity">
+                        AFRICANA
+                    </span>
+                    <span class="text-[10px] font-medium tracking-widest text-white uppercase">
+                        Branding Agency
+                    </span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors">Home</a>
+                <a href="about.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors">About Us</a>
+                <a href="services.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors"> Our Services</a>
+                <a href="package.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors"> Our Packages</a>
+                <a href="portfolio.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors">Portfolio</a>
+                
+                <a href="contact.html" class="ml-4 bg-white text-blue-600 px-6 py-3 rounded-full text-sm font-bold shadow-md hover:bg-black hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                    Contact Us
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-3xl text-white focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-24 left-0 w-fit min-w-[250px] h-auto bg-white shadow-2xl flex-col items-start p-6 space-y-4 md:hidden border-t border-gray-100 rounded-br-xl">
+            
+            <a href="index.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Home
+            </a>
+            <a href="about.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                About Us
+            </a>
+            <a href="services.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Our Services
+            </a>
+            <a href="package.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Our Packages
+            </a>
+            <a href="portfolio.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Portfolio
+            </a>
+            
+            <a href="contact.html" class="w-full inline-block bg-blue-600 text-white text-center py-3 rounded-lg font-bold shadow-md hover:bg-black transition-colors mt-2">
+                Contact Us
+            </a>
+        </div>
+
+    </nav>
+
+        
+        <header class="py-24 px-6 md:px-12 lg:px-24 bg-black text-white text-center pt-40">
+            <div class="reveal-up max-w-4xl mx-auto">
+                <h6 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Transparent Pricing</h6>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Investment Packages</h1>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                    Choose the plan that fits your vision. Whether you are a startup or an established corporation, we have a solution for you.
+                </p>
+            </div>
+        </header>
+
+        <section class="py-20 px-6 max-w-7xl mx-auto">
+            <div class="mb-12 text-center reveal-up">
+                <h2 class="text-2xl font-black mb-4 uppercase tracking-widest text-blue-600">Social Media Management</h2>
+                <div class="w-16 h-1 bg-black mx-auto"></div>
+                <p class="mt-4 text-gray-500">Monthly retainer packages to grow your online community.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <div class="reveal-left bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:border-blue-600 transition duration-300 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded-bl-lg">STARTER</div>
+                    <h3 class="font-black text-xl mb-2 text-black">Startup Presence</h3>
+                    <p class="text-3xl font-bold mb-6 text-blue-600">$350<span class="text-sm text-gray-400 font-normal">/mo</span></p>
+                    <ul class="space-y-4 text-gray-600 mb-8 text-sm">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> 3 Posts per Week (Static)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Content Research & Captioning</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Basic Monthly Report</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> 1 Platform (Instagram)</li>
+                    </ul>
+                    <a href="contact.html" class="block w-full bg-gray-100 hover:bg-blue-600 hover:text-white text-black py-3 rounded-lg font-bold text-center transition duration-300">Inquire Now</a>
+                </div>
+
+                <div class="reveal-right bg-black p-8 rounded-2xl text-white shadow-xl shadow-blue-900/20 transform md:scale-105 border border-blue-600 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
+                    <h3 class="font-black text-xl mb-2">Growth Engine</h3>
+                    <p class="text-3xl font-bold mb-6 text-blue-400">$750<span class="text-sm text-gray-400 font-normal">/mo</span></p>
+                    <ul class="space-y-4 text-gray-300 mb-8 text-sm">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Daily Posting (5/week)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> 4 Reels / Video Content</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Community Management (Replies)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> 2 Platforms (IG + LinkedIn)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Monthly Strategy Call</li>
+                    </ul>
+                    <a href="contact.html" class="block w-full bg-blue-600 hover:bg-white hover:text-blue-600 text-white py-3 rounded-lg font-bold text-center transition duration-300">Select Pro</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12 text-center reveal-up">
+                    <h2 class="text-2xl font-black mb-4 uppercase tracking-widest text-black">Branding & Identity</h2>
+                    <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+                    <p class="mt-4 text-gray-500">One-time investment to define your business face.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="reveal-up bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-lg transition duration-300">
+                        <h3 class="font-bold text-xl mb-2 text-black">Logo Essentials</h3>
+                        <p class="text-2xl font-bold mb-6 text-blue-600">$200</p>
+                        <p class="text-xs text-gray-500 mb-6">Perfect for small startups needing a quick start.</p>
+                        <ul class="space-y-3 text-gray-600 mb-8 text-sm">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> 2 Logo Concepts</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Color Palette</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Typography Selection</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> High-Res Files (PNG/JPG)</li>
+                        </ul>
+                        <a href="contact.html" class="block w-full border border-black text-black hover:bg-black hover:text-white py-2 rounded font-semibold text-center transition">Get Started</a>
+                    </div>
+
+                    <div class="reveal-up bg-white p-8 rounded-xl border-t-4 border-blue-600 shadow-xl relative" style="transition-delay: 100ms;">
+                        <div class="absolute top-4 right-4 text-blue-600"><i class="fa-solid fa-star"></i></div>
+                        <h3 class="font-bold text-xl mb-2 text-black">Corporate Identity</h3>
+                        <p class="text-2xl font-bold mb-6 text-blue-600">$500</p>
+                        <p class="text-xs text-gray-500 mb-6">For businesses ready to scale professionally.</p>
+                        <ul class="space-y-3 text-gray-600 mb-8 text-sm">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> 3 Logo Concepts</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Full Brand Guideline Book</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Business Card Design</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Letterhead & Envelope</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Social Media Kit</li>
+                        </ul>
+                        <a href="contact.html" class="block w-full bg-blue-600 text-white hover:bg-blue-700 py-3 rounded font-semibold text-center transition">Choose Best Value</a>
+                    </div>
+
+                    <div class="reveal-up bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-lg transition duration-300" style="transition-delay: 200ms;">
+                        <h3 class="font-bold text-xl mb-2 text-black">Web Presence</h3>
+                        <p class="text-2xl font-bold mb-6 text-blue-600">From $400</p>
+                        <p class="text-xs text-gray-500 mb-6">A responsive website to convert visitors.</p>
+                        <ul class="space-y-3 text-gray-600 mb-8 text-sm">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> up to 5 Pages</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Mobile Responsive</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> SEO Basic Setup</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> Contact Form Integration</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-600"></i> 1 Month Support</li>
+                        </ul>
+                        <a href="contact.html" class="block w-full border border-black text-black hover:bg-black hover:text-white py-2 rounded font-semibold text-center transition">Get Started</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-6 max-w-4xl mx-auto">
+            <div class="text-center mb-12 reveal-up">
+                <h2 class="text-2xl font-bold text-black">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="reveal-up border border-gray-200 rounded-lg p-6 bg-white shadow-sm">
+                    <h3 class="font-bold text-black mb-2 flex items-center gap-2"><i class="fa-regular fa-circle-question text-blue-600"></i> Do you require a deposit?</h3>
+                    <p class="text-gray-600 text-sm">Yes, we typically require a 50% deposit to begin work on branding and web projects. For monthly social media retainers, payment is due at the start of the month.</p>
+                </div>
+
+                <div class="reveal-up border border-gray-200 rounded-lg p-6 bg-white shadow-sm">
+                    <h3 class="font-bold text-black mb-2 flex items-center gap-2"><i class="fa-regular fa-circle-question text-blue-600"></i> How many revisions do I get?</h3>
+                    <p class="text-gray-600 text-sm">Our standard packages include up to 3 rounds of revisions. We work closely with you in the concept phase to ensure we hit the mark early.</p>
+                </div>
+
+                <div class="reveal-up border border-gray-200 rounded-lg p-6 bg-white shadow-sm">
+                    <h3 class="font-bold text-black mb-2 flex items-center gap-2"><i class="fa-regular fa-circle-question text-blue-600"></i> Can I customize a package?</h3>
+                    <p class="text-gray-600 text-sm">Absolutely. If you need a mix of services (e.g., Logo + Website + Social Media), contact us for a custom bundled quote.</p>
+                </div>
+            </div>
+        </section>
+        
+<section class="py-24 px-6">
+    
+    <div class="bg-black rounded-3xl relative overflow-hidden max-w-7xl mx-auto py-20 text-center text-white shadow-2xl">
+        
+        <div class="relative z-10 max-w-2xl mx-auto px-6 reveal-up">
+            <h2 class="text-3xl font-bold mb-4">Don't see what you need?</h2>
+            <p class="text-gray-400 mb-8 leading-relaxed">
+                We offer custom solutions for large enterprises and unique projects. Let's talk about your specific goals.
+            </p>
+            <a href="contact.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-600 transition duration-300 shadow-lg transform hover:-translate-y-1">
+                Request Custom Quote
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    </div>
+
+            <!--footer-->
+    <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
+            
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">Africana Tech</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    We deliver cutting-edge technology solutions that drive growth, enhance security, and establish a powerful digital presence for businesses across Africa and beyond.
+                </p>
+            </div>    
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                    <li><a href="service.html" class="text-gray-400 hover:text-white transition">Our Services</a></li>
+                    <li><a href="client.html" class="text-gray-400 hover:text-white transition">Client</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Social Media</h3>
+                <div class="flex flex-row md:flex-col space-x-5 md:space-x-0 md:space-y-3 text-sm">                            
+                    <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-instagram text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">Instagram</span>
+                    </a>                            
+                    <a href="YOUR_X_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-x-twitter text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">X (Twitter)</span>
+                    </a>                            
+                    <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-facebook-f text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">Facebook</span>
+                    </a>
+                    <a href="YOUR_TIKTOK_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-tiktok text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">TikTok</span>
+                    </a>                            
+                </div>
+            </div>           
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Contact</h3>                
+                <div class="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-4"> 
+                    
+                    <a href="https://wa.me/255672743065" target="_blank" rel="noopener noreferrer" class="flex items-center group transition-all duration-300">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-green-100 text-green-600 rounded-lg group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </div>
+                        <div class="hidden md:flex flex-col ml-3">
+                            <span class="text-[10px] font-bold uppercase text-gray-500">WhatsApp</span>
+                            <span class="text-xs font-medium text-gray-300 group-hover:text-green-400">(+255) 0672 743 065</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:africanatech@gmail.com" class="flex items-center group transition-all duration-300">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-lg group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-sm">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </div>
+                        <div class="hidden md:flex flex-col ml-3">
+                            <span class="text-[10px] font-bold uppercase text-gray-500">Email Us</span>
+                            <span class="text-xs font-medium text-gray-300 group-hover:text-indigo-400">africanatech@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="#" target="_blank" class="flex items-center group transition-all duration-300">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-emerald-100 text-emerald-600 rounded-lg group-hover:bg-emerald-600 group-hover:text-white transition-all shadow-sm">
+                            <i class="fas fa-map-marker-alt text-lg"></i>
+                        </div>
+                        <div class="hidden md:flex flex-col ml-3">
+                            <span class="text-[10px] font-bold uppercase text-gray-500">Location</span>
+                            <span class="text-xs font-medium text-gray-300 group-hover:text-emerald-400">Mwanza, Tanzania</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div> 
+        
+        <div class="pt-8 text-center text-sm text-white text-medium">
+            <p>© 2025 Africana Tech Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+   
+
+    <script src="scrpt.js"></script>
+</body>
+</html>

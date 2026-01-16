@@ -1,0 +1,193 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Basic Resets */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ================= DESKTOP NAV ANIMATIONS ================= */
+
+/* Relative positioning for the underline to stick to the link */
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+}
+
+/* The Underline (Initially width 0) */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* White underline on blue header */
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+/* On Hover: Expand underline */
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active Page: Keep underline full */
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+/* ================= HERO SECTION ================= */
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+/* Hero Text Reveal */
+.reveal {
+    opacity: 1;
+    animation: fadeInUp 0.8s ease-out backwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+
+
+/* ================= SCROLL ANIMATIONS ================= */
+
+/* 1. Base States (Hidden) */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out;
+}
+
+.pillar-card {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 2. Active States (Visible) */
+.reveal-up.active, 
+.reveal-left.active, 
+.reveal-right.active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.pillar-card.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ================= MISSION & VISION (Pop Up) ================= */
+
+/* Initial State */
+.pop-up {
+    opacity: 0;
+    /* Start small and pushed down */
+    transform: scale(0.5) translateY(50px);
+    /* Bouncy transition */
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Active State */
+.pop-up.active {
+    opacity: 1;
+    /* Scale to normal size and reset position */
+    transform: scale(1) translateY(0);
+}
+
+/* Hover Effects for Cards */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px) !important; 
+    transition: transform 0.3s ease !important;
+}
+
+/* Helper for delays */
+.delay-200 { transition-delay: 200ms; }
+
+
+/* ================= PORTFOLIO PAGE STYLES ================= */
+
+/* Filter Buttons */
+.filter-btn {
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0; /* Gray border */
+    background-color: white;
+    color: #475569;
+}
+
+.filter-btn.active {
+    background-color: #2563EB; /* Blue-600 */
+    color: white;
+    border-color: #2563EB;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+}
+
+.filter-btn:hover:not(.active) {
+    background-color: #f1f5f9;
+    border-color: #94a3b8;
+}
+
+/* Portfolio Grid Items */
+.portfolio-item {
+    transition: all 0.5s ease;
+}
+
+/* Hide Item (When filtered out) */
+.hide-item {
+    display: none;
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+/* Show Item (When selected) */
+.show-item {
+    display: block;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}

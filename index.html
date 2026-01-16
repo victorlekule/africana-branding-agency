@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Africana Branding Agency</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-poppins bg-white text-black antialiased">
+<!--Heade-->
+<nav class="fixed w-full z-50 top-0 left-0 bg-blue-600 text-white shadow-lg h-24 flex items-center justify-center">
+        
+        <div class="w-full max-w-7xl mx-auto px-6 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center gap-2 group">
+                
+                <div class="flex flex-col leading-tight">
+                    <span class="text-xl font-bold tracking-tight text-white group-hover:opacity-90 transition-opacity">
+                        AFRICANA
+                    </span>
+                    <span class="text-[10px] font-medium tracking-widest text-white uppercase">
+                        Branding Agency
+                    </span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors">Home</a>
+                <a href="about.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors">About Us</a>
+                <a href="services.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors"> Our Services</a>
+                <a href="package.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors"> Our Packages</a>
+                <a href="portfolio.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors">Portfolio</a>
+                
+                <a href="contact.html" class="ml-4 bg-white text-blue-600 px-6 py-3 rounded-full text-sm font-bold shadow-md hover:bg-black hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                    Contact Us
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-3xl text-white focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-24 left-0 w-fit min-w-[250px] h-auto bg-white shadow-2xl flex-col items-start p-6 space-y-4 md:hidden border-t border-gray-100 rounded-br-xl">
+            
+            <a href="index.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Home
+            </a>
+            <a href="about.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                About Us
+            </a>
+            <a href="services.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Our Services
+            </a>
+            <a href="package.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Our Packages
+            </a>
+            <a href="portfolio.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Portfolio
+            </a>
+            
+            <a href="contact.html" class="w-full inline-block bg-blue-600 text-white text-center py-3 rounded-lg font-bold shadow-md hover:bg-black transition-colors mt-2">
+                Contact Us
+            </a>
+        </div>
+
+    </nav>
+
+
+
+
+
+    <!--Heade-->
+
+    <!--Hero 1-->
+<section class="relative w-full h-auto lg:h-screen flex flex-col justify-center overflow-hidden bg-black pt-32 pb-20 lg:pt-35 lg:pb-0">
+    
+    <div id="hero-slider" class="absolute inset-0 z-0"></div>
+
+    <div class="absolute inset-0 z-10 bg-gradient-to-r from-black via-black/90 to-black/40"></div>
+
+    <div class="relative z-20 max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 items-center">
+        
+        <div class="space-y-6 md:space-y-8 text-center lg:text-left">
+            
+            <h1 class="reveal delay-100 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-tight">
+                We Turn African <br> 
+                Visions Into <br>
+                <span class="text-brand-blue relative inline-block">
+                    Global Brands.
+                    <svg class="absolute w-full h-2 md:h-3 -bottom-1 left-0 text-blue-800 -z-10 opacity-50" viewBox="0 0 100 10" preserveAspectRatio="none">
+                        <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none" />
+                    </svg>
+                </span>
+            </h1>
+
+            <p class="reveal delay-200 text-sm md:text-lg text-gray-300 max-w-lg mx-auto lg:mx-0 leading-relaxed font-light">
+                Stop competing on price. Start competing on value. We build strategic identities, websites, and campaigns that position you as the market leader.
+            </p>
+
+            <div class="reveal delay-300 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2 md:pt-4">
+                <a href="contact.html" class="bg-brand-blue text-white px-8 py-4 rounded-lg font-bold shadow-lg shadow-blue-900/50 hover:bg-white hover:text-brand-blue hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 text-sm md:text-base">
+                    Start Your Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="portfolio.html" class="border border-white/30 text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center backdrop-blur-sm text-sm md:text-base">
+                    View Portfolio
+                </a>
+            </div>
+
+            </div>
+        
+        <div class="hidden lg:block"></div>
+    </div>    
+</section>
+
+    <!--Hero 2-->
+<section class="py-24 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        
+        <div class="reveal relative">
+            <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Africana Team" 
+                     class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105">
+                
+                <div class="absolute bottom-6 right-6 bg-brand-blue text-white p-6 rounded-2xl shadow-xl max-w-[200px]">
+                    <p class="text-4xl font-bold mb-1">5+</p>
+                    <p class="text-xs uppercase tracking-widest opacity-80">Years of Excellence</p>
+                </div>
+            </div>
+
+            <div class="absolute top-10 -left-10 w-full h-full bg-blue-50 rounded-3xl -z-0"></div>
+        </div>
+
+        <div class="reveal delay-100 space-y-8">
+            <div>
+                <span class="text-brand-blue font-bold tracking-widest uppercase text-sm mb-2 block">Who We Are</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-black leading-tight">
+                    We Are the Architects of <br>
+                    <span class="text-blue-600">Modern African Brands.</span>
+                </h2>
+            </div>
+            
+            <p class="text-gray-500 text-lg leading-relaxed">
+                Africana Branding Agency was born from a simple belief: <strong>African businesses deserve world-class representation.</strong>
+            </p>
+            
+            <p class="text-gray-500 text-lg leading-relaxed">
+                We don't just design logos; we architect identities. We bridge the gap between rich cultural heritage and modern digital strategy to help you command attention on the global stage.
+            </p>
+
+            <div class="grid grid-cols-2 gap-8 py-6 border-t border-gray-100">
+                <div>
+                    <h4 class="text-3xl font-extrabold text-black">150+</h4>
+                    <p class="text-sm text-gray-400 font-medium">Projects Delivered</p>
+                </div>
+                <div>
+                    <h4 class="text-3xl font-extrabold text-black">98%</h4>
+                    <p class="text-sm text-gray-400 font-medium">Client Satisfaction</p>
+                </div>
+            </div>
+
+            <a href="about.html" class="inline-flex items-center gap-2 text-black font-bold border-b-2 border-brand-blue pb-1 hover:text-brand-blue transition-colors">
+                Read Our Full Story <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+     <!--Hero 3-->
+<section class="py-24 bg-brand-blue text-white">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="reveal inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 font-bold tracking-widest uppercase text-xs mb-4">
+                Our Expertise
+            </span>
+            <h2 class="reveal delay-100 text-3xl md:text-5xl font-extrabold leading-tight">
+                High-Impact Services for <br>
+                <span class="text-blue-200">Modern Businesses.</span>
+            </h2>
+            <p class="reveal delay-200 text-blue-100 mt-6 text-lg font-light">
+                We provide end-to-end branding solutions designed to help you scale, standout, and sell more.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <a href="services.html" class="reveal delay-100 group bg-white p-10 rounded-3xl shadow-xl border border-transparent hover:shadow-2xl hover:-translate-y-3 transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl text-brand-blue mb-8 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
+                    <i class="fa-solid fa-chess-knight"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-black mb-4 group-hover:text-brand-blue transition-colors">Brand Strategy</h3>
+                <p class="text-gray-500 leading-relaxed mb-6">
+                    We analyze your market, define your voice, and create a roadmap to position you as the industry leader.
+                </p>
+                <div class="flex items-center gap-2 font-bold text-sm uppercase tracking-wider text-black group-hover:text-brand-blue transition-colors">
+                    Learn More <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+            <a href="services.html" class="reveal delay-200 group bg-white p-10 rounded-3xl shadow-xl border border-transparent hover:shadow-2xl hover:-translate-y-3 transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl text-brand-blue mb-8 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-black mb-4 group-hover:text-brand-blue transition-colors">Visual Identity</h3>
+                <p class="text-gray-500 leading-relaxed mb-6">
+                    From logos to color systems, we craft a cohesive visual language that makes your brand unforgettable.
+                </p>
+                <div class="flex items-center gap-2 font-bold text-sm uppercase tracking-wider text-black group-hover:text-brand-blue transition-colors">
+                    Learn More <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+            <a href="services.html" class="reveal delay-300 group bg-white p-10 rounded-3xl shadow-xl border border-transparent hover:shadow-2xl hover:-translate-y-3 transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl text-brand-blue mb-8 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-black mb-4 group-hover:text-brand-blue transition-colors">Digital Marketing</h3>
+                <p class="text-gray-500 leading-relaxed mb-6">
+                    Social media management, SEO, and paid campaigns that convert followers into paying customers.
+                </p>
+                <div class="flex items-center gap-2 font-bold text-sm uppercase tracking-wider text-black group-hover:text-brand-blue transition-colors">
+                    Learn More <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="reveal delay-300 mt-16 text-center">
+            <a href="services.html" class="inline-block bg-white text-brand-blue px-10 py-4 rounded-full font-bold hover:bg-black hover:text-white transition-colors duration-300 shadow-lg hover:shadow-xl">
+                Explore All Services
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <!--Hero 4-->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div class="max-w-2xl">
+                <span class="reveal inline-block py-1 px-3 rounded-full bg-blue-50 text-brand-blue border border-blue-100 font-bold tracking-widest uppercase text-xs mb-4">
+                    Selected Works
+                </span>
+                <h2 class="reveal delay-100 text-3xl md:text-5xl font-extrabold text-black leading-tight">
+                    We Build Brands That <br>
+                    <span class="text-brand-blue">Shape Culture.</span>
+                </h2>
+            </div>
+            
+            <div class="reveal delay-200 hidden md:block">
+                <a href="portfolio.html" class="group flex items-center gap-2 font-bold text-black border-b-2 border-black pb-1 hover:text-brand-blue hover:border-brand-blue transition-colors">
+                    See Our Work <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <a href="portfolio.html" class="reveal delay-100 group relative block h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-lg cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Safari Project" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+                
+                <div class="absolute bottom-0 left-0 p-8 w-full">
+                    <div class="mb-2">
+                        <span class="bg-brand-blue text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Tourism</span>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Serengeti Experience</h3>
+                    <p class="text-gray-300 text-sm md:text-base line-clamp-2">
+                        A complete rebrand and digital strategy that increased booking inquiries by 200% in the first quarter.
+                    </p>
+                </div>
+            </a>
+
+            <a href="portfolio.html" class="reveal delay-200 group relative block h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-lg cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Fintech App" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+                
+                <div class="absolute bottom-0 left-0 p-8 w-full">
+                    <div class="mb-2">
+                        <span class="bg-brand-blue text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Fintech</span>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">PesaFlow Mobile App</h3>
+                    <p class="text-gray-300 text-sm md:text-base line-clamp-2">
+                        UI/UX Design and Identity for Tanzania's fastest-growing mobile money application.
+                    </p>
+                </div>
+            </a>
+
+            <a href="portfolio.html" class="reveal delay-300 group relative block h-[350px] rounded-3xl overflow-hidden shadow-lg cursor-pointer md:col-span-2">
+                <img src="https://images.unsplash.com/photo-1605218427368-35b861286977?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                     alt="Coffee Brand" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+                
+                <div class="absolute bottom-0 left-0 p-8 w-full max-w-2xl">
+                    <div class="mb-2">
+                        <span class="bg-brand-blue text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Retail</span>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Kilimanjaro Roast</h3>
+                    <p class="text-gray-300 text-sm md:text-base">
+                        Packaging design and international market entry strategy for a premium local coffee brand.
+                    </p>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="mt-12 text-center md:hidden">
+            <a href="portfolio.html" class="inline-block bg-black text-white px-10 py-4 rounded-full font-bold hover:bg-brand-blue transition-colors duration-300 shadow-lg">
+                See Our Work
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+    <!--Hero 5-->
+<section class="py-24 bg-black text-white relative overflow-hidden">
+    
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-full bg-brand-blue/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        
+        <div class="text-center mb-16">
+            <span class="reveal inline-block py-1 px-3 rounded-full bg-white/10 border border-white/10 text-brand-blue font-bold tracking-widest uppercase text-xs mb-4">
+                Client Success
+            </span>
+            <h2 class="reveal delay-100 text-3xl md:text-5xl font-extrabold leading-tight">
+                Trusted by Africa's <br>
+                <span class="text-blue-500">Industry Leaders.</span>
+            </h2>
+        </div>
+
+        <div class="reveal delay-200 flex flex-wrap justify-center items-center gap-8 md:gap-16 mb-20 opacity-70">
+            <div class="group flex items-center gap-2 text-2xl font-bold text-gray-500 hover:text-white transition-colors cursor-default">
+                <i class="fa-brands fa-aws text-3xl group-hover:text-brand-blue transition-colors"></i> 
+                <span class="hidden md:inline">TechCorp</span>
+            </div>
+            <div class="group flex items-center gap-2 text-2xl font-bold text-gray-500 hover:text-white transition-colors cursor-default">
+                <i class="fa-solid fa-plane-departure text-3xl group-hover:text-brand-blue transition-colors"></i> 
+                <span class="hidden md:inline">FlySafari</span>
+            </div>
+            <div class="group flex items-center gap-2 text-2xl font-bold text-gray-500 hover:text-white transition-colors cursor-default">
+                <i class="fa-solid fa-building-columns text-3xl group-hover:text-brand-blue transition-colors"></i> 
+                <span class="hidden md:inline">BankOne</span>
+            </div>
+            <div class="group flex items-center gap-2 text-2xl font-bold text-gray-500 hover:text-white transition-colors cursor-default">
+                <i class="fa-solid fa-leaf text-3xl group-hover:text-brand-blue transition-colors"></i> 
+                <span class="hidden md:inline">AgriGrowth</span>
+            </div>
+            <div class="group flex items-center gap-2 text-2xl font-bold text-gray-500 hover:text-white transition-colors cursor-default">
+                <i class="fa-solid fa-gem text-3xl group-hover:text-brand-blue transition-colors"></i> 
+                <span class="hidden md:inline">LuxeTz</span>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="reveal delay-100 bg-gray-900/50 border border-white/10 p-8 rounded-3xl relative hover:bg-gray-900 hover:border-brand-blue/50 transition-all duration-300 group">
+                <div class="absolute top-6 right-8 text-6xl text-brand-blue/20 font-serif">"</div>
+                
+                <div class="flex text-yellow-500 text-xs gap-1 mb-6">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                
+                <p class="text-gray-300 leading-relaxed mb-8 relative z-10">
+                    "Africana didn't just design our logo; they completely revitalized our market positioning. Our sales have doubled since the rebrand launched."
+                </p>
+
+                <div class="flex items-center gap-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="w-12 h-12 rounded-full border-2 border-brand-blue">
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Juma Mkwawa</h4>
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">CEO, AgriGrowth</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal delay-200 bg-gray-900 border border-brand-blue/30 p-8 rounded-3xl relative shadow-2xl shadow-blue-900/20 hover:scale-105 transition-all duration-300 group">
+                <div class="absolute top-6 right-8 text-6xl text-brand-blue/20 font-serif">"</div>
+                
+                <div class="flex text-yellow-500 text-xs gap-1 mb-6">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                
+                <p class="text-white font-medium leading-relaxed mb-8 relative z-10">
+                    "Professional, timely, and incredibly creative. They understood our vision for a modern African tech company better than we did ourselves."
+                </p>
+
+                <div class="flex items-center gap-4">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="w-12 h-12 rounded-full border-2 border-brand-blue">
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Sarah Kimani</h4>
+                        <p class="text-xs text-brand-blue uppercase tracking-wide">Founder, TechCorp</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal delay-300 bg-gray-900/50 border border-white/10 p-8 rounded-3xl relative hover:bg-gray-900 hover:border-brand-blue/50 transition-all duration-300 group">
+                <div class="absolute top-6 right-8 text-6xl text-brand-blue/20 font-serif">"</div>
+                
+                <div class="flex text-yellow-500 text-xs gap-1 mb-6">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                
+                <p class="text-gray-300 leading-relaxed mb-8 relative z-10">
+                    "The website they built for us is world-class. It loads fast, looks amazing on mobile, and has significantly improved our user trust."
+                </p>
+
+                <div class="flex items-center gap-4">
+                    <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Client" class="w-12 h-12 rounded-full border-2 border-brand-blue">
+                    <div>
+                        <h4 class="font-bold text-white text-sm">David Omondi</h4>
+                        <p class="text-xs text-gray-500 uppercase tracking-wide">Director, FlySafari</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!--Hero 6-->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto bg-black text-white rounded-[3rem] overflow-hidden relative px-6 py-20 md:p-24 text-center shadow-2xl">
+            
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-brand-blue/30 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div class="relative z-10">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    Ready to Dominate <br> Your Market?
+                </h2>
+                <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+                    Don't let your brand blend in. Schedule a free 30-minute strategy call with our expert team and let's map out your success.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-5">
+                    <a href="contact.html" class="bg-brand-blue text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-brand-blue transition-all duration-300 shadow-lg shadow-blue-900/50">
+                        Book Free Strategy Call
+                    </a>
+                    <a href="tel:+255123456789" class="bg-transparent border border-gray-700 text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-black transition-all duration-300">
+                        Call Us: +255 123 456
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--footer-->
+    <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
+            
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">Africana Tech</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    We deliver cutting-edge technology solutions that drive growth, enhance security, and establish a powerful digital presence for businesses across Africa and beyond.
+                </p>
+            </div>    
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                    <li><a href="service.html" class="text-gray-400 hover:text-white transition">Our Services</a></li>
+                    <li><a href="client.html" class="text-gray-400 hover:text-white transition">Client</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Social Media</h3>
+                <div class="flex flex-row md:flex-col space-x-5 md:space-x-0 md:space-y-3 text-sm">                            
+                    <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-instagram text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">Instagram</span>
+                    </a>                            
+                    <a href="YOUR_X_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-x-twitter text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">X (Twitter)</span>
+                    </a>                            
+                    <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-facebook-f text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">Facebook</span>
+                    </a>
+                    <a href="YOUR_TIKTOK_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-tiktok text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">TikTok</span>
+                    </a>                            
+                </div>
+            </div>           
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Contact</h3>                
+                <div class="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-4"> 
+                    
+                    <a href="https://wa.me/255672743065" target="_blank" rel="noopener noreferrer" class="flex items-center group transition-all duration-300">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-green-100 text-green-600 rounded-lg group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </div>
+                        <div class="hidden md:flex flex-col ml-3">
+                            <span class="text-[10px] font-bold uppercase text-gray-500">WhatsApp</span>
+                            <span class="text-xs font-medium text-gray-300 group-hover:text-green-400">(+255) 0672 743 065</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:africanatech@gmail.com" class="flex items-center group transition-all duration-300">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-lg group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-sm">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </div>
+                        <div class="hidden md:flex flex-col ml-3">
+                            <span class="text-[10px] font-bold uppercase text-gray-500">Email Us</span>
+                            <span class="text-xs font-medium text-gray-300 group-hover:text-indigo-400">africanatech@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="#" target="_blank" class="flex items-center group transition-all duration-300">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-emerald-100 text-emerald-600 rounded-lg group-hover:bg-emerald-600 group-hover:text-white transition-all shadow-sm">
+                            <i class="fas fa-map-marker-alt text-lg"></i>
+                        </div>
+                        <div class="hidden md:flex flex-col ml-3">
+                            <span class="text-[10px] font-bold uppercase text-gray-500">Location</span>
+                            <span class="text-xs font-medium text-gray-300 group-hover:text-emerald-400">Mwanza, Tanzania</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div> 
+        
+        <div class="pt-8 text-center text-sm text-white text-medium">
+            <p>© 2025 Africana Tech Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+   
+
+    <script src="scrpt.js"></script>
+</body>
+</html>

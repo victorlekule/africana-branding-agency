@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Africana Branding Agency</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-poppins bg-gray-50 text-black antialiased overflow-x-hidden">
+
+<nav class="fixed w-full z-50 top-0 left-0 bg-blue-600 text-white shadow-lg h-24 flex items-center justify-center">
+        
+        <div class="w-full max-w-7xl mx-auto px-6 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center gap-2 group">
+                
+                <div class="flex flex-col leading-tight">
+                    <span class="text-xl font-bold tracking-tight text-white group-hover:opacity-90 transition-opacity">
+                        AFRICANA
+                    </span>
+                    <span class="text-[10px] font-medium tracking-widest text-white uppercase">
+                        Branding Agency
+                    </span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors">Home</a>
+                <a href="about.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors">About Us</a>
+                <a href="services.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors"> Our Services</a>
+                <a href="package.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors"> Our Packages</a>
+                <a href="portfolio.html" class="nav-link text-sm font-medium hover:text-blue-200 transition-colors">Portfolio</a>
+                
+                <a href="contact.html" class="ml-4 bg-white text-blue-600 px-6 py-3 rounded-full text-sm font-bold shadow-md hover:bg-black hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                    Contact Us
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-3xl text-white focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-24 left-0 w-fit min-w-[250px] h-auto bg-white shadow-2xl flex-col items-start p-6 space-y-4 md:hidden border-t border-gray-100 rounded-br-xl">
+            
+            <a href="index.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Home
+            </a>
+            <a href="about.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                About Us
+            </a>
+            <a href="services.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Our Services
+            </a>
+            <a href="package.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Our Packages
+            </a>
+            <a href="portfolio.html" class="w-full text-lg font-semibold text-black hover:text-blue-600 border-b border-gray-100 pb-2 transition-colors text-left">
+                Portfolio
+            </a>
+            
+            <a href="contact.html" class="w-full inline-block bg-blue-600 text-white text-center py-3 rounded-lg font-bold shadow-md hover:bg-black transition-colors mt-2">
+                Contact Us
+            </a>
+        </div>
+
+    </nav>
+
+
+    <div id="content">
+        <header class="py-24 px-6 md:px-12 lg:px-24 bg-black text-white text-center pt-40">
+            <div class="reveal-up max-w-4xl mx-auto">
+                <h6 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Our Masterpieces</h6>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">SELECTED WORKS</h1>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                    Explore our portfolio, where each project tells a unique brand story. We leverage creativity to connect brands with their audiences meaningfully.
+                </p>
+            </div>
+        </header>
+
+        <main class="py-20 max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4 mb-16 reveal-up" id="filter-buttons">
+                <button class="filter-btn active px-8 py-2 rounded-full font-medium text-sm" data-filter="all">All Work</button>
+                <button class="filter-btn px-8 py-2 rounded-full font-medium text-sm bg-white text-gray-600" data-filter="branding">Branding</button>
+                <button class="filter-btn px-8 py-2 rounded-full font-medium text-sm bg-white text-gray-600" data-filter="poster">Posters</button>
+                <button class="filter-btn px-8 py-2 rounded-full font-medium text-sm bg-white text-gray-600" data-filter="logo">Logos</button>
+                <button class="filter-btn px-8 py-2 rounded-full font-medium text-sm bg-white text-gray-600" data-filter="web">Web Design</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                
+                <div class="portfolio-item branding reveal-up group relative h-80 rounded-xl overflow-hidden cursor-pointer shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1524169358666-79f22534bc6e?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-400 text-xs font-bold uppercase tracking-wider mb-1">Branding</span>
+                        <h3 class="text-white text-xl font-bold">EcoVibe Africa</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item poster reveal-up group relative h-80 rounded-xl overflow-hidden cursor-pointer shadow-lg" style="transition-delay: 100ms;">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-400 text-xs font-bold uppercase tracking-wider mb-1">Event Poster</span>
+                        <h3 class="text-white text-xl font-bold">AfroJazz Festival 2025</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item logo reveal-up group relative h-80 rounded-xl overflow-hidden cursor-pointer shadow-lg" style="transition-delay: 200ms;">
+                    <img src="https://images.unsplash.com/photo-1626785774625-ddc7c82a2939?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-400 text-xs font-bold uppercase tracking-wider mb-1">Logo Design</span>
+                        <h3 class="text-white text-xl font-bold">TechFlow Systems</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item web reveal-up group relative h-80 rounded-xl overflow-hidden cursor-pointer shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-400 text-xs font-bold uppercase tracking-wider mb-1">Web Design</span>
+                        <h3 class="text-white text-xl font-bold">Safari Booking App</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item branding reveal-up group relative h-80 rounded-xl overflow-hidden cursor-pointer shadow-lg" style="transition-delay: 100ms;">
+                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-400 text-xs font-bold uppercase tracking-wider mb-1">Branding</span>
+                        <h3 class="text-white text-xl font-bold">Mwanza Coffee Co.</h3>
+                    </div>
+                </div>
+
+                 <div class="portfolio-item logo reveal-up group relative h-80 rounded-xl overflow-hidden cursor-pointer shadow-lg" style="transition-delay: 200ms;">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e0b7a8?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-400 text-xs font-bold uppercase tracking-wider mb-1">Logo Design</span>
+                        <h3 class="text-white text-xl font-bold">SolarAfrica Ltd</h3>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+       <section class="py-24 px-6">
+    
+    <div class="bg-blue-600 rounded-3xl relative overflow-hidden max-w-7xl mx-auto py-20 text-center text-white shadow-2xl">
+        
+        <div class="absolute inset-0 opacity-10 pointer-events-none" 
+             style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 20px 20px;">
+        </div>
+        
+        <div class="relative z-10 max-w-2xl mx-auto px-6 reveal-up">
+            <h2 class="text-3xl font-bold mb-4">Have a project in mind?</h2>
+            <p class="text-blue-100 mb-8">We'd love to help you build something amazing. Let's start a conversation.</p>
+            <a href="contact.html" class="inline-block bg-black text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition duration-300 border border-transparent hover:border-black shadow-lg">
+                Start Your Project
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    </div>
+
+        <!--footer-->
+    <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
+            
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">Africana Tech</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    We deliver cutting-edge technology solutions that drive growth, enhance security, and establish a powerful digital presence for businesses across Africa and beyond.
+                </p>
+            </div>    
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                    <li><a href="service.html" class="text-gray-400 hover:text-white transition">Our Services</a></li>
+                    <li><a href="client.html" class="text-gray-400 hover:text-white transition">Client</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Social Media</h3>
+                <div class="flex flex-row md:flex-col space-x-5 md:space-x-0 md:space-y-3 text-sm">                            
+                    <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-instagram text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">Instagram</span>
+                    </a>                            
+                    <a href="YOUR_X_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-x-twitter text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">X (Twitter)</span>
+                    </a>                            
+                    <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-facebook-f text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">Facebook</span>
+                    </a>
+                    <a href="YOUR_TIKTOK_LINK" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-tiktok text-xl md:text-base md:w-5"></i> 
+                        <span class="hidden md:inline">TikTok</span>
+                    </a>                            
+                </div>
+            </div>           
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Contact</h3>                
+                <div class="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-4"> 
+                    
+                    <a href="https://wa.me/255672743065" target="_blank" rel="noopener noreferrer" class="flex items-center group transition-all duration-300">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-green-100 text-green-600 rounded-lg group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </div>
+                        <div class="hidden md:flex flex-col ml-3">
+                            <span class="text-[10px] font-bold uppercase text-gray-500">WhatsApp</span>
+                            <span class="text-xs font-medium text-gray-300 group-hover:text-green-400">(+255) 0672 743 065</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:africanatech@gmail.com" class="flex items-center group transition-all duration-300">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-lg group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-sm">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </div>
+                        <div class="hidden md:flex flex-col ml-3">
+                            <span class="text-[10px] font-bold uppercase text-gray-500">Email Us</span>
+                            <span class="text-xs font-medium text-gray-300 group-hover:text-indigo-400">africanatech@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="#" target="_blank" class="flex items-center group transition-all duration-300">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-emerald-100 text-emerald-600 rounded-lg group-hover:bg-emerald-600 group-hover:text-white transition-all shadow-sm">
+                            <i class="fas fa-map-marker-alt text-lg"></i>
+                        </div>
+                        <div class="hidden md:flex flex-col ml-3">
+                            <span class="text-[10px] font-bold uppercase text-gray-500">Location</span>
+                            <span class="text-xs font-medium text-gray-300 group-hover:text-emerald-400">Mwanza, Tanzania</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div> 
+        
+        <div class="pt-8 text-center text-sm text-white text-medium">
+            <p>© 2025 Africana Tech Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+   
+
+    <script src="scrpt.js"></script>
+</body>
+</html>
